@@ -26,8 +26,10 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "src/reset.css"
+              "src/color-vars.css",
+              "src/fonts.css",
+              "src/reset.css",
+              "src/styles.css"
             ]
           },
           "configurations": {
