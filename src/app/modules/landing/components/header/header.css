@@ -1,0 +1,42 @@
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+h1 *{
+  font-size: 4.5rem;
+  height: fit-content;
+  font-weight: 600;
+}
+
+.highlight{
+  background: linear-gradient(90deg, var(--brand-500), var(--brand-600));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--brand-600);
+}
+
+.title{
+  color: var(--brand-950);
+}
+
+p{
+  width: 70%;
+  text-align: center;
+  color: var(--neutral-400);
+  line-height: 1.5;
+}
