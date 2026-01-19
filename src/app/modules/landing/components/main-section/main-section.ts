@@ -1,12 +1,12 @@
 import {Component, input} from '@angular/core';
 
 @Component({
-  selector: 'landing-header',
+  selector: 'landing-main-section',
   imports: [],
-  templateUrl: './header.html',
-  styleUrl: './header.css',
+  templateUrl: './main-section.html',
+  styleUrl: './main-section.css',
 })
-export class LandingHeader {
+export class LandingMainSection {
   contentHighlight = input<string>();
   contentTitle = input<string>();
   contentParagraph = input<string>();

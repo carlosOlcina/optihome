@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {LandingHeader} from '../../modules/landing/components/header/header';
+import {LandingMainSection} from '../../modules/landing/components/main-section/main-section';
 
 @Component({
   selector: 'landing-page',
   imports: [
-    LandingHeader,
+    LandingMainSection,
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
