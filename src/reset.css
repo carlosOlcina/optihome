@@ -3,6 +3,8 @@ html {
 }
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
+  color: #333;
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -139,6 +141,9 @@ table {
 }
 a {
   text-decoration: none;
+}
+a:visited  {
+  color: inherit;
 }
 input {
   border: none;
