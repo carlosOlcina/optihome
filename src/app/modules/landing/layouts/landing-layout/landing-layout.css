@@ -37,12 +37,3 @@ nav{
 .link-active{
   color: var(--brand-600);
 }
-
-.nav-button{
-  padding: .7rem 2rem;
-  border-radius: .5rem;
-  background: linear-gradient(90deg, var(--brand-500), var(--brand-600));
-
-  color: var(--neutral-50);
-  font-size: .9rem;
-}

@@ -10,5 +10,4 @@ import {LandingMainSection} from '../../modules/landing/components/main-section/
   styleUrl: './landing-page.component.css',
 })
 export class LandingPage {
-
 }

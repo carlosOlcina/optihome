@@ -10,8 +10,8 @@
     <a routerLink="/landing" class="link">Como funciona</a>
     <a routerLink="/landing" class="link">Sobre nosotros</a>
   </nav>
-<!--TODO move to share component-->
-  <a routerLink="/shop" class="nav-button">Comenzar</a>
+
+  <ui-primary-button [action]="navigateToMain">Comenzar</ui-primary-button>
 </header>
 
 <router-outlet>
