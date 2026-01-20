@@ -5,8 +5,11 @@ section{
   align-items: center;
   gap: 1rem;
 
+  height: 100vh;
   width: fit-content;
   margin: 0 auto;
+
+  background: radial-gradient(circle at 50% 45% , var(--brand-200) 0%, var(--brand-50) 50%);
 }
 
 h1{
