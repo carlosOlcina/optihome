@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { CardLanding } from './card';
+import { CardLanding } from './card'
 
 describe('Card', () => {
-  let component: CardLanding;
-  let fixture: ComponentFixture<CardLanding>;
+  let component: CardLanding
+  let fixture: ComponentFixture<CardLanding>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardLanding]
-    })
-    .compileComponents();
+      imports: [CardLanding],
+    }).compileComponents()
 
-    fixture = TestBed.createComponent(CardLanding);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
+    fixture = TestBed.createComponent(CardLanding)
+    component = fixture.componentInstance
+    await fixture.whenStable()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { HeaderLanding } from './header-landing';
+import { HeaderLanding } from './header-landing'
 
 describe('HeaderLanding', () => {
-  let component: HeaderLanding;
-  let fixture: ComponentFixture<HeaderLanding>;
+  let component: HeaderLanding
+  let fixture: ComponentFixture<HeaderLanding>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderLanding]
-    })
-    .compileComponents();
+      imports: [HeaderLanding],
+    }).compileComponents()
 
-    fixture = TestBed.createComponent(HeaderLanding);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
+    fixture = TestBed.createComponent(HeaderLanding)
+    component = fixture.componentInstance
+    await fixture.whenStable()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

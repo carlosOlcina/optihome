@@ -1,19 +1,16 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { Logo } from '../../../../../share/icons/logo/logo';
-import { RouterLink } from '@angular/router';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core'
+import { Logo } from '../../../../../share/icons/logo/logo'
+import { RouterLink } from '@angular/router'
 
 @Component({
   selector: 'landing-footer',
-  imports: [
-    Logo,
-    RouterLink
-  ],
+  imports: [Logo, RouterLink],
   templateUrl: './footer-landing.html',
   styleUrl: './footer-landing.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterLanding {
-  readonly currentYear = signal(new Date().getFullYear());
+  readonly currentYear = signal(new Date().getFullYear())
 
   readonly footerSections = signal([
     {
@@ -22,8 +19,8 @@ export class FooterLanding {
         { label: 'Smart lights', href: '#' },
         { label: 'Smart camera', href: '#' },
         { label: 'Smart speaker', href: '#' },
-        { label: 'Climate hub', href: '#' }
-      ]
+        { label: 'Climate hub', href: '#' },
+      ],
     },
     {
       title: 'Empresa',
@@ -31,14 +28,12 @@ export class FooterLanding {
         { label: 'Sobre nosotros', href: '#' },
         { label: 'Contacto', href: '#' },
         { label: 'Privacidad', href: '#' },
-        { label: 'Términos', href: '#' }
-      ]
+        { label: 'Términos', href: '#' },
+      ],
     },
     {
       title: 'Recursos',
-      links: [
-        { label: 'Documentación', href: '#' }
-      ]
-    }
-  ]);
+      links: [{ label: 'Documentación', href: '#' }],
+    },
+  ])
 }

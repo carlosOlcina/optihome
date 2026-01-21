@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'landing-title-paragraph',
@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './title-paragraph.html',
   styleUrl: './title-paragraph.css',
 })
-export class TitleParagraphLanding {
-
-}
+export class TitleParagraphLanding {}
