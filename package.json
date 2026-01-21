@@ -9,7 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "format": "prettier --write \"src/**/*.{ts,html,css,scss}\""
+    "format": "prettier --write \"src/**/*.{ts,html,css,scss}\"",
+    "prepare": "husky"
   },
   "private": true,
   "packageManager": "pnpm@10.28.0",
