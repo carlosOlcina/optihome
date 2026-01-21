@@ -1,9 +1,9 @@
 /* Global styles */
 
-*{
+* {
   font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
   background: var(--brand-50);
 }

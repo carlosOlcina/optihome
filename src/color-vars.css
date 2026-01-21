@@ -1,26 +1,26 @@
 :root {
   /* Branding colors */
-  --brand-50: #F1F9FE;
-  --brand-100: #E1F2FD;
-  --brand-200: #BDE5FA;
-  --brand-300: #83D0F6;
-  --brand-400: #40B9F0;
-  --brand-500: #25AAE8;
-  --brand-600: #0B80BE;
-  --brand-700: #0A669A;
-  --brand-800: #0D567F;
-  --brand-900: #10486A;
-  --brand-950: #0B2E46;
+  --brand-50: #f1f9fe;
+  --brand-100: #e1f2fd;
+  --brand-200: #bde5fa;
+  --brand-300: #83d0f6;
+  --brand-400: #40b9f0;
+  --brand-500: #25aae8;
+  --brand-600: #0b80be;
+  --brand-700: #0a669a;
+  --brand-800: #0d567f;
+  --brand-900: #10486a;
+  --brand-950: #0b2e46;
 
   /* Neutral colors */
-  --neutral-50: #FFFFFF;
-  --neutral-100: #E7E7E7;
-  --neutral-200: #D1D1D1;
-  --neutral-300: #B0B0B0;
+  --neutral-50: #ffffff;
+  --neutral-100: #e7e7e7;
+  --neutral-200: #d1d1d1;
+  --neutral-300: #b0b0b0;
   --neutral-400: #888888;
-  --neutral-500: #6D6D6D;
-  --neutral-600: #5D5D5D;
-  --neutral-700: #4F4F4F;
+  --neutral-500: #6d6d6d;
+  --neutral-600: #5d5d5d;
+  --neutral-700: #4f4f4f;
   --neutral-800: #454545;
   --neutral-900: #333333;
   --neutral-950: #262626;
