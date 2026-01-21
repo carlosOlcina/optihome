@@ -26,6 +26,11 @@ h1 *{
   font-weight: 600;
 }
 
+.paragraph-container{
+  width: 80%;
+
+}
+
 .highlight{
   background: linear-gradient(90deg, var(--brand-500), var(--brand-600));
   -webkit-background-clip: text;

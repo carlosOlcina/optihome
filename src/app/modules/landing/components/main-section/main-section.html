@@ -1,7 +1,9 @@
 <section>
   <h1><span class="title">{{contentTitle()}}</span> <span class="highlight">{{contentHighlight()}}</span></h1>
 
-  <landing-title-paragraph>{{contentParagraph()}}</landing-title-paragraph>
+  <div class="paragraph-container">
+    <landing-title-paragraph>{{contentParagraph()}}</landing-title-paragraph>
+  </div>
 
   <ng-content></ng-content>
 </section>
