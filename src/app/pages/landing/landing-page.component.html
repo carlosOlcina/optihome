@@ -4,9 +4,18 @@
       <ui-primary-button [action]="navigateToMain" [size]="SizeEnum.large">Descubrir productos</ui-primary-button>
 
       <ul class="benefits">
-        <li>Privacidad total</li>
-        <li>Respuesta instantánea</li>
-        <li>Sin Internet</li>
+        <li>
+          <lucide-icon [img]="shieldIcon" aria-hidden="true" [color]="BrandColorsEnum.Brand400"></lucide-icon>
+          Privacidad total
+        </li>
+        <li>
+          <lucide-icon [img]="zapIcon" aria-hidden="true" [color]="BrandColorsEnum.Brand400"></lucide-icon>
+          Respuesta instantánea
+        </li>
+        <li>
+          <lucide-icon [img]="wifiIcon" aria-hidden="true" [color]="BrandColorsEnum.Brand400"></lucide-icon>
+          Sin Internet
+        </li>
       </ul>
 
     </div>
