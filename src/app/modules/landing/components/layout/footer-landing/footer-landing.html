@@ -1,0 +1,35 @@
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a routerLink="/landing" class="logo-link" aria-label="Ir a la página de inicio">
+        <app-logo size="2rem"></app-logo>
+        <span class="brand-name">Optihome</span>
+      </a>
+
+      <p class="brand-description">
+        Domótica que respeta tu privacidad.<br>
+        Sin cloud, sin suscripciones
+      </p>
+    </div>
+
+    @for (section of footerSections(); track section.title) {
+      <nav class="footer-section" [attr.aria-label]="section.title">
+        <h2 class="section-title">{{ section.title }}</h2>
+        <ul class="section-links">
+          @for (link of section.links; track link.label) {
+            <li>
+              <a [href]="link.href" class="footer-link">{{ link.label }}</a>
+            </li>
+          }
+        </ul>
+      </nav>
+    }
+  </div>
+
+  <div class="footer-bottom">
+    <small class="copyright">
+      © <time datetime="2026">2026</time>
+      Optihome. Todos los derechos reservados
+    </small>
+  </div>
+</footer>
