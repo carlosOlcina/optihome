@@ -1,5 +1,6 @@
 header{
-  padding: 1.5rem 1rem;
+  height: var(--header-height-landing);
+  padding: 1.5rem;
   border: 1px solid var(--neutral-200);
   width: 100%;
 

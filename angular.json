@@ -27,6 +27,7 @@
             ],
             "styles": [
               "src/color-vars.css",
+              "src/variables.css",
               "src/fonts.css",
               "src/reset.css",
               "src/styles.css"
