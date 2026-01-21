@@ -36,10 +36,3 @@ h1 *{
 .title{
   color: var(--brand-950);
 }
-
-p{
-  width: 70%;
-  text-align: center;
-  color: var(--neutral-400);
-  line-height: 1.5;
-}
