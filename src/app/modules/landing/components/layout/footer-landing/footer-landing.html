@@ -7,22 +7,22 @@
       </a>
 
       <p class="brand-description">
-        Domótica que respeta tu privacidad.<br>
+        Domótica que respeta tu privacidad.<br />
         Sin cloud, sin suscripciones
       </p>
     </div>
 
     @for (section of footerSections(); track section.title) {
-      <nav class="footer-section" [attr.aria-label]="section.title">
-        <h2 class="section-title">{{ section.title }}</h2>
-        <ul class="section-links">
-          @for (link of section.links; track link.label) {
-            <li>
-              <a [href]="link.href" class="footer-link">{{ link.label }}</a>
-            </li>
-          }
-        </ul>
-      </nav>
+    <nav class="footer-section" [attr.aria-label]="section.title">
+      <h2 class="section-title">{{ section.title }}</h2>
+      <ul class="section-links">
+        @for (link of section.links; track link.label) {
+        <li>
+          <a [href]="link.href" class="footer-link">{{ link.label }}</a>
+        </li>
+        }
+      </ul>
+    </nav>
     }
   </div>
 

@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core'
-import { LucideAngularModule, LucideIconData, ShieldIcon } from 'lucide-angular'
+import { LucideAngularModule, LucideIconData } from 'lucide-angular'
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
 
 @Component({

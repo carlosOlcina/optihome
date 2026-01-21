@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { LandingMainSection } from '../../modules/landing/components/main-section/main-section'
 import { PrimaryButtonShared } from '../../share/components/buttons/primary-button/primary-button'
 import { Router } from '@angular/router'
@@ -32,6 +32,8 @@ import { CardLanding } from '../../modules/landing/components/card/card'
   styleUrl: './landing-page.component.css',
 })
 export class LandingPage {
+  private readonly router = inject(Router)
+
   readonly shieldIcon = ShieldIcon
   readonly zapIcon = ZapIcon
   readonly wifiIcon = WifiIcon
@@ -39,8 +41,6 @@ export class LandingPage {
   readonly dolarIcon = DollarSignIcon
   readonly lockIcon = LockIcon
   readonly serverIcon = ServerIcon
-
-  constructor(private router: Router) {}
 
   navigateToMain = () => {
     void this.router.navigate(['/shop'])
