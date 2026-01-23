@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router'
-import { LandingLayout } from './modules/landing/layouts/landing-layout/landing-layout'
+import { LandingLayout } from './layouts/landing/landing-layout'
 
 export const routes: Routes = [
   { path: '', redirectTo: 'landing', pathMatch: 'full' },

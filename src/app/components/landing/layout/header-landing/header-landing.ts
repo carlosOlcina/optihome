@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core'
-import { Logo } from '../../../../../share/icons/logo/logo'
-import { PrimaryButtonShared } from '../../../../../share/components/buttons/primary-button/primary-button'
+import { Logo } from '../../../../share/icons/logo/logo'
+import { PrimaryButtonShared } from '../../../../share/components/buttons/primary-button/primary-button'
 import { Router, RouterLink } from '@angular/router'
 
 @Component({

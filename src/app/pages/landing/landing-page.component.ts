@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core'
-import { LandingMainSection } from '../../modules/landing/components/main-section/main-section'
+import { LandingMainSection } from '../../components/landing/main-section/main-section'
 import { PrimaryButtonShared } from '../../share/components/buttons/primary-button/primary-button'
 import { Router } from '@angular/router'
 import { SizeEnum } from '../../config/enums/size-enum'
@@ -14,8 +14,8 @@ import {
   ZapIcon,
 } from 'lucide-angular'
 import { BrandColorsEnum } from '../../config/enums/colors/brand-colors-enum'
-import { TitleLanding } from '../../modules/landing/components/title/title'
-import { TitleParagraphLanding } from '../../modules/landing/components/title-paragraph/title-paragraph'
+import { TitleLanding } from '../../components/landing/title/title'
+import { TitleParagraphLanding } from '../../components/landing/title-paragraph/title-paragraph'
 import { CardLanding } from '../../modules/landing/components/card/card'
 
 @Component({

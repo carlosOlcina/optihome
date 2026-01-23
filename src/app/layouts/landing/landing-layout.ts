@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
-import { HeaderLanding } from '../../components/layout/header-landing/header-landing'
-import { FooterLanding } from '../../components/layout/footer-landing/footer-landing'
+import { HeaderLanding } from '../../components/landing/layout/header-landing/header-landing'
+import { FooterLanding } from '../../components/landing/layout/footer-landing/footer-landing'
 
 @Component({
   selector: 'landing-layout',

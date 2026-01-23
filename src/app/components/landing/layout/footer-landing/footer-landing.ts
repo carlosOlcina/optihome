@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core'
-import { Logo } from '../../../../../share/icons/logo/logo'
+import { Logo } from '../../../../share/icons/logo/logo'
 import { RouterLink } from '@angular/router'
 
 @Component({
