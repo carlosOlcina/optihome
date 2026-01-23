@@ -15,8 +15,8 @@ import {
 } from 'lucide-angular'
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
 import { TitleH2Landing } from '../../atoms/title-h2/title-h2'
-import { TitleParagraphLanding } from '../../atoms/title-paragraph/title-paragraph'
 import { CardLanding } from '../../molecules/card/card'
+import { ParagraphLanding } from '../../atoms/paragraph/paragraph'
 
 @Component({
   selector: 'landing-page',
@@ -25,8 +25,8 @@ import { CardLanding } from '../../molecules/card/card'
     PrimaryButtonShared,
     LucideAngularModule,
     TitleH2Landing,
-    TitleParagraphLanding,
     CardLanding,
+    ParagraphLanding,
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
@@ -38,7 +38,7 @@ export class LandingPage {
   readonly zapIcon = ZapIcon
   readonly wifiIcon = WifiIcon
   readonly wifiOffIcon = WifiOffIcon
-  readonly dolarIcon = DollarSignIcon
+  readonly dollarIcon = DollarSignIcon
   readonly lockIcon = LockIcon
   readonly serverIcon = ServerIcon
 
