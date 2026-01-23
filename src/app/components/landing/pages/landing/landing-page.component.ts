@@ -14,7 +14,7 @@ import {
   ZapIcon,
 } from 'lucide-angular'
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
-import { TitleLanding } from '../../atoms/title/title'
+import { TitleH2Landing } from '../../atoms/title-h2/title-h2'
 import { TitleParagraphLanding } from '../../atoms/title-paragraph/title-paragraph'
 import { CardLanding } from '../../molecules/card/card'
 
@@ -24,7 +24,7 @@ import { CardLanding } from '../../molecules/card/card'
     LandingMainSection,
     PrimaryButtonShared,
     LucideAngularModule,
-    TitleLanding,
+    TitleH2Landing,
     TitleParagraphLanding,
     CardLanding,
   ],
