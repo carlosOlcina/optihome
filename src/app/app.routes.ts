@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router'
-import { LandingLayout } from './layouts/landing/landing-layout'
+import { LandingLayout } from './components/landing/templates/landing/landing-layout'
 
 export const routes: Routes = [
   { path: '', redirectTo: 'landing', pathMatch: 'full' },
@@ -7,7 +7,11 @@ export const routes: Routes = [
     path: 'landing/**',
     component: LandingLayout,
     children: [
-      { path: '', loadComponent: () => import('./pages/landing/landing-page.component').then((m) => m.LandingPage) },
+      {
+        path: '',
+        loadComponent: () =>
+          import('./components/landing/pages/landing/landing-page.component').then((m) => m.LandingPage),
+      },
     ],
   },
 ]

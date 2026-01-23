@@ -1,7 +1,7 @@
 header {
   height: var(--header-height-landing);
   padding: 1.5rem;
-  border: 1px solid var(--neutral-200);
+  border-bottom: 1px solid var(--neutral-100);
   width: 100%;
 
   display: flex;

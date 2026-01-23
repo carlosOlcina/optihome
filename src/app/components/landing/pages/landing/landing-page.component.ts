@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core'
-import { LandingMainSection } from '../../components/landing/main-section/main-section'
-import { PrimaryButtonShared } from '../../share/components/buttons/primary-button/primary-button'
+import { LandingMainSection } from '../../organism/main-section/main-section'
+import { PrimaryButtonShared } from '../../../../share/components/buttons/primary-button/primary-button'
 import { Router } from '@angular/router'
-import { SizeEnum } from '../../config/enums/size-enum'
+import { SizeEnum } from '../../../../config/enums/size-enum'
 import {
   DollarSignIcon,
   LockIcon,
@@ -13,10 +13,10 @@ import {
   WifiOffIcon,
   ZapIcon,
 } from 'lucide-angular'
-import { BrandColorsEnum } from '../../config/enums/colors/brand-colors-enum'
-import { TitleLanding } from '../../components/landing/title/title'
-import { TitleParagraphLanding } from '../../components/landing/title-paragraph/title-paragraph'
-import { CardLanding } from '../../modules/landing/components/card/card'
+import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
+import { TitleLanding } from '../../atoms/title/title'
+import { TitleParagraphLanding } from '../../atoms/title-paragraph/title-paragraph'
+import { CardLanding } from '../../molecules/card/card'
 
 @Component({
   selector: 'landing-page',
