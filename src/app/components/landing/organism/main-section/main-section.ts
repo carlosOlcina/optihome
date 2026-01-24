@@ -1,9 +1,9 @@
 import { Component, input } from '@angular/core'
-import { TitleParagraphLanding } from '../../atoms/title-paragraph/title-paragraph'
+import { ParagraphLanding } from '../../atoms/paragraph/paragraph'
 
 @Component({
   selector: 'landing-main-section',
-  imports: [TitleParagraphLanding],
+  imports: [ParagraphLanding],
   templateUrl: './main-section.html',
   styleUrl: './main-section.css',
 })

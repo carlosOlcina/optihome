@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { TitleParagraphLanding } from './title-paragraph'
+import { ParagraphLanding } from './paragraph'
 
-describe('TitleParagraph', () => {
-  let component: TitleParagraphLanding
-  let fixture: ComponentFixture<TitleParagraphLanding>
+describe('Paragraph', () => {
+  let component: ParagraphLanding
+  let fixture: ComponentFixture<ParagraphLanding>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TitleParagraphLanding],
+      imports: [ParagraphLanding],
     }).compileComponents()
 
-    fixture = TestBed.createComponent(TitleParagraphLanding)
+    fixture = TestBed.createComponent(ParagraphLanding)
     component = fixture.componentInstance
     await fixture.whenStable()
   })

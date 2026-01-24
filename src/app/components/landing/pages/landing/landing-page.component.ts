@@ -14,12 +14,20 @@ import {
   ZapIcon,
 } from 'lucide-angular'
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
+import { TitleH2Landing } from '../../atoms/title-h2/title-h2'
 import { CardLanding } from '../../molecules/card/card'
-import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
+import { ParagraphLanding } from '../../atoms/paragraph/paragraph'
 
 @Component({
   selector: 'landing-page',
-  imports: [LandingMainSection, PrimaryButtonShared, LucideAngularModule, CardLanding, SectionHeaderLanding],
+  imports: [
+    LandingMainSection,
+    PrimaryButtonShared,
+    LucideAngularModule,
+    TitleH2Landing,
+    CardLanding,
+    ParagraphLanding,
+  ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })
@@ -30,7 +38,7 @@ export class LandingPage {
   readonly zapIcon = ZapIcon
   readonly wifiIcon = WifiIcon
   readonly wifiOffIcon = WifiOffIcon
-  readonly dolarIcon = DollarSignIcon
+  readonly dollarIcon = DollarSignIcon
   readonly lockIcon = LockIcon
   readonly serverIcon = ServerIcon
 
