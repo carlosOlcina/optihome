@@ -40,15 +40,6 @@ main {
   padding: 0 5rem;
 }
 
-.why-local header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 50%;
-}
-
 .card-container {
   width: 100%;
   display: flex;
