@@ -26,15 +26,10 @@
 
   <!--TODO Do component section-->
   <section class="why-local">
-    <header>
-      <landing-title>¿Por qué local?</landing-title>
-      <div>
-        <landing-title-paragraph
-          >La domótica depende de servidores externos. Nosotros creemos que tu hogar debería funcionar para ti, no para
-          corporaciones</landing-title-paragraph
-        >
-      </div>
-    </header>
+    <landing-section-header
+      titleContent="¿Por qué local?"
+      paragraphContent="La domótica depende de servidores externos. Nosotros creemos que tu hogar deberóa funcionar para ti, no para corporaciones"
+    ></landing-section-header>
     <div class="card-container">
       <landing-card
         [icon]="shieldIcon"
@@ -52,7 +47,7 @@
         descriptionText="Tu casa sigue siendo inteligente aunque caiga internet. Independencia total de servicios externos."
       ></landing-card>
       <landing-card
-        [icon]="dolarIcon"
+        [icon]="dollarIcon"
         titleText="Sin Suscripciones"
         descriptionText="Compra una vez, usa para siempre. Sin cuotas mensuales ni funciones bloqueadas detrás de pagos"
       ></landing-card>
@@ -66,6 +61,16 @@
         titleText="Tú Tienes el Control"
         descriptionText="Hardware y software abiertos. Modifica, expande y personaliza sin limitaciones artificiales."
       ></landing-card>
+    </div>
+  </section>
+
+  <section class="ecosystem">
+    <landing-section-header
+      titleContent="Ecosistema OptiHome"
+      paragraphContent="Dispositivos diseñados desde cero para funcionar localmente. Compatibles entre sí y con protocolos abiertos"
+    ></landing-section-header>
+    <div>
+      <h3>Iluminación</h3>
     </div>
   </section>
 </main>

@@ -14,20 +14,12 @@ import {
   ZapIcon,
 } from 'lucide-angular'
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
-import { TitleH2Landing } from '../../atoms/title-h2/title-h2'
 import { CardLanding } from '../../molecules/card/card'
-import { ParagraphLanding } from '../../atoms/paragraph/paragraph'
+import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
 
 @Component({
   selector: 'landing-page',
-  imports: [
-    LandingMainSection,
-    PrimaryButtonShared,
-    LucideAngularModule,
-    TitleH2Landing,
-    CardLanding,
-    ParagraphLanding,
-  ],
+  imports: [LandingMainSection, PrimaryButtonShared, LucideAngularModule, CardLanding, SectionHeaderLanding],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })

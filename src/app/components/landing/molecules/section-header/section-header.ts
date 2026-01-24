@@ -1,10 +1,10 @@
 import { Component, input } from '@angular/core'
-import { TitleLanding } from '../../atoms/title/title'
-import { TitleParagraphLanding } from '../../atoms/title-paragraph/title-paragraph'
+import { TitleH2Landing } from '../../atoms/title-h2/title-h2'
+import { ParagraphLanding } from '../../atoms/paragraph/paragraph'
 
 @Component({
   selector: 'landing-section-header',
-  imports: [TitleLanding, TitleParagraphLanding],
+  imports: [TitleH2Landing, ParagraphLanding],
   templateUrl: './section-header.html',
   styleUrl: './section-header.css',
 })
