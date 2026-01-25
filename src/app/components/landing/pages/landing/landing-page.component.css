@@ -52,10 +52,16 @@ main {
   width: 30%;
 }
 
+.ecosystem {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .product-container {
   display: flex;
   gap: 2rem;
-  padding: 2rem 0 0 5rem;
+  padding: 0 0 0 5rem;
 
   width: 100vw;
 
