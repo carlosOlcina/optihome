@@ -16,16 +16,25 @@ import {
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
 import { CardLanding } from '../../molecules/card/card'
 import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
+import { ProductCardLanding } from '../../molecules/product-card/product-card'
 
 @Component({
   selector: 'landing-page',
-  imports: [LandingMainSection, PrimaryButtonShared, LucideAngularModule, CardLanding, SectionHeaderLanding],
+  imports: [
+    LandingMainSection,
+    PrimaryButtonShared,
+    LucideAngularModule,
+    CardLanding,
+    SectionHeaderLanding,
+    ProductCardLanding,
+  ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })
 export class LandingPage {
   private readonly router = inject(Router)
 
+  // Import icons
   readonly shieldIcon = ShieldIcon
   readonly zapIcon = ZapIcon
   readonly wifiIcon = WifiIcon

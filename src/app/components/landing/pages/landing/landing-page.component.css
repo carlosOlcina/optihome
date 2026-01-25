@@ -51,3 +51,13 @@ main {
 .card-container * {
   width: 30%;
 }
+
+.product-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0 0 5rem;
+
+  width: fit-content;
+
+  overflow-x: auto;
+}
