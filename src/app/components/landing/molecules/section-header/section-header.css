@@ -6,3 +6,13 @@ header {
   gap: 1rem;
   width: 100vw;
 }
+
+.title {
+  width: 50%;
+}
+
+.paragraph {
+  display: block;
+  width: 50%;
+  text-align: center;
+}

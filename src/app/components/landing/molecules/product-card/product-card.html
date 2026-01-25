@@ -1,6 +1,8 @@
 <article class="card">
   <img [ngSrc]="imageUrl()" [alt]="imageAlt()" height="293" width="172" />
+
   <landing-title-h3>{{titleContent()}}</landing-title-h3>
+
   <a [routerLink]="urlPath()">
     {{urlContent()}}
     <lucide-icon
