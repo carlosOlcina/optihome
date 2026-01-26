@@ -17,6 +17,8 @@ import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-en
 import { CardLanding } from '../../molecules/card/card'
 import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
 import { ProductCardLanding } from '../../molecules/product-card/product-card'
+import StepsData from '../../../../data/landing/config-steps'
+import { NgStyle } from '@angular/common'
 
 @Component({
   selector: 'landing-page',
@@ -27,6 +29,7 @@ import { ProductCardLanding } from '../../molecules/product-card/product-card'
     CardLanding,
     SectionHeaderLanding,
     ProductCardLanding,
+    NgStyle,
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
@@ -46,6 +49,9 @@ export class LandingPage {
   navigateToMain = () => {
     void this.router.navigate(['/shop'])
   }
-  protected readonly SizeEnum = SizeEnum
-  protected readonly BrandColorsEnum = BrandColorsEnum
+
+  readonly SizeEnum = SizeEnum
+  readonly BrandColorsEnum = BrandColorsEnum
+
+  readonly stepsData = StepsData
 }
