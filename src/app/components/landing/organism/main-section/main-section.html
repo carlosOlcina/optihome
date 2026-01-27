@@ -1,7 +1,9 @@
 <section>
-  <h1><span class="title">{{contentTitle()}}</span> <span class="highlight">{{contentHighlight()}}</span></h1>
+  <header>
+    <h1><span class="title">{{contentTitle()}}</span> <span class="highlight">{{contentHighlight()}}</span></h1>
 
-  <landing-paragraph class="paragraph" [centered]="true">{{contentParagraph()}}</landing-paragraph>
+    <landing-paragraph class="paragraph" [centered]="true">{{contentParagraph()}}</landing-paragraph>
+  </header>
 
   <ng-content></ng-content>
 </section>
