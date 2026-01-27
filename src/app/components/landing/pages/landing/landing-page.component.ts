@@ -11,6 +11,7 @@ import { ProductCardLanding } from '../../molecules/product-card/product-card'
 import { NgStyle } from '@angular/common'
 import StepsData from '../../../../data/landing/config-steps'
 import BenefitsCards from '../../../../data/landing/benefits-cards'
+import EcosystemProducts from '../../../../data/landing/ecosystem-products'
 
 @Component({
   selector: 'landing-page',
@@ -41,6 +42,7 @@ export class LandingPage {
   readonly SizeEnum = SizeEnum
   readonly BrandColorsEnum = BrandColorsEnum
 
-  readonly stepsData = StepsData
   readonly benefitsCards = BenefitsCards
+  readonly ecosystemProducts = EcosystemProducts
+  readonly stepsData = StepsData
 }
