@@ -6,4 +6,5 @@
 
 html {
   background: var(--brand-50);
+  scroll-behavior: smooth;
 }
