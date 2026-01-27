@@ -3,22 +3,14 @@ import { LandingCtaSection } from '../../organism/cta-section/cta-section'
 import { PrimaryButtonShared } from '../../../../share/components/buttons/primary-button/primary-button'
 import { Router } from '@angular/router'
 import { SizeEnum } from '../../../../config/enums/size-enum'
-import {
-  DollarSignIcon,
-  LockIcon,
-  LucideAngularModule,
-  ServerIcon,
-  ShieldIcon,
-  WifiIcon,
-  WifiOffIcon,
-  ZapIcon,
-} from 'lucide-angular'
+import { LucideAngularModule, ShieldIcon, WifiIcon, ZapIcon } from 'lucide-angular'
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
 import { CardLanding } from '../../molecules/card/card'
 import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
 import { ProductCardLanding } from '../../molecules/product-card/product-card'
-import StepsData from '../../../../data/landing/config-steps'
 import { NgStyle } from '@angular/common'
+import StepsData from '../../../../data/landing/config-steps'
+import BenefitsCards from '../../../../data/landing/benefits-cards'
 
 @Component({
   selector: 'landing-page',
@@ -38,13 +30,9 @@ export class LandingPage {
   private readonly router = inject(Router)
 
   // Import icons
-  readonly shieldIcon = ShieldIcon
-  readonly zapIcon = ZapIcon
   readonly wifiIcon = WifiIcon
-  readonly wifiOffIcon = WifiOffIcon
-  readonly dollarIcon = DollarSignIcon
-  readonly lockIcon = LockIcon
-  readonly serverIcon = ServerIcon
+  readonly zapIcon = ZapIcon
+  readonly shieldIcon = ShieldIcon
 
   navigateToMain = () => {
     void this.router.navigate(['/shop'])
@@ -54,4 +42,5 @@ export class LandingPage {
   readonly BrandColorsEnum = BrandColorsEnum
 
   readonly stepsData = StepsData
+  readonly benefitsCards = BenefitsCards
 }
