@@ -22,20 +22,20 @@ main {
   align-items: center;
 }
 
-.benefits {
+.benefits-hero {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
 
-.benefits li {
+.benefits-hero li {
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
 }
 
-.why-local {
+#benefits {
   height: calc(100vh - var(--header-height-landing));
   width: 100vw;
   display: flex;
@@ -58,7 +58,7 @@ main {
   width: 30%;
 }
 
-.ecosystem {
+#ecosystem {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -77,19 +77,19 @@ main {
   width: 30vw;
 }
 
-.how-it-works {
+#how-it-works {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.how-it-works ol {
+#how-it-works ol {
   position: relative;
   display: grid;
   grid-template-columns: 45% 10% 45%;
   width: 100vw;
 }
-.how-it-works li {
+#how-it-works li {
   display: flex;
   gap: 1rem;
 
