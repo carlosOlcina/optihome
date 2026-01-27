@@ -1,3 +1,9 @@
+.hero {
+  height: calc(100vh - var(--header-height-landing));
+  display: flex;
+  justify-content: center;
+}
+
 main {
   padding-top: var(--header-height-landing);
   display: flex;
@@ -124,6 +130,10 @@ main {
   width: 2px;
 
   background: var(--brand-500);
+}
+
+.final {
+  padding: 0 0 20vh;
 }
 
 .benefits-final {
