@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core'
-import { LandingMainSection } from '../../organism/main-section/main-section'
+import { LandingCtaSection } from '../../organism/cta-section/cta-section'
 import { PrimaryButtonShared } from '../../../../share/components/buttons/primary-button/primary-button'
 import { Router } from '@angular/router'
 import { SizeEnum } from '../../../../config/enums/size-enum'
@@ -23,7 +23,7 @@ import { NgStyle } from '@angular/common'
 @Component({
   selector: 'landing-page',
   imports: [
-    LandingMainSection,
+    LandingCtaSection,
     PrimaryButtonShared,
     LucideAngularModule,
     CardLanding,

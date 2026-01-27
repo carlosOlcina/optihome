@@ -2,12 +2,12 @@ import { Component, input } from '@angular/core'
 import { ParagraphLanding } from '../../atoms/paragraph/paragraph'
 
 @Component({
-  selector: 'landing-main-section',
+  selector: 'landing-cta-section',
   imports: [ParagraphLanding],
-  templateUrl: './main-section.html',
-  styleUrl: './main-section.css',
+  templateUrl: './cta-section.html',
+  styleUrl: './cta-section.css',
 })
-export class LandingMainSection {
+export class LandingCtaSection {
   contentHighlight = input<string>()
   contentTitle = input<string>()
   contentParagraph = input<string>()
