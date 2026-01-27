@@ -125,3 +125,12 @@ main {
 
   background: var(--brand-500);
 }
+
+.benefits-final {
+  display: flex;
+  gap: 2rem;
+  list-style: disc;
+}
+.benefits-final li::marker {
+  color: var(--brand-600);
+}
