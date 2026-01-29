@@ -11,7 +11,7 @@ export default [
     id: '6iqKESGdVfRMWYzixdqjY',
     imagePath: '/camara.webp',
     imageAlt: 'Imagen de camara inteligente optihome',
-    title: 'Vigilancia',
+    title: 'Seguridad',
     urlContent: 'Ver camaras y sensores',
     path: '/shop/section/vigilance',
   },
@@ -21,6 +21,23 @@ export default [
     imageAlt: 'Imagen de bombilla inteligente optihome',
     title: 'Iluminación',
     urlContent: 'Ver iluminación, enchufes e interruptores',
+    path: '/shop/section/ilumination',
+  },
+  // TODO Implement images products
+  {
+    id: '_9zlshD7egYRMGOm83sh1',
+    imagePath: '/bombilla.webp',
+    imageAlt: 'Imagen de termostatos inteligente optihome',
+    title: 'Comodidad',
+    urlContent: 'Ver termostatos',
+    path: '/shop/section/ilumination',
+  },
+  {
+    id: '718B6qOrL50bil7BcMbxM',
+    imagePath: '/bombilla.webp',
+    imageAlt: 'Imagen de timbre inteligente optihome',
+    title: 'Entrada',
+    urlContent: 'Ver timbres y cerraduras',
     path: '/shop/section/ilumination',
   },
 ]
