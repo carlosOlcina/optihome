@@ -10,8 +10,6 @@
   padding: 4rem 2rem;
   background: var(--neutral-50);
   border-radius: 2rem;
-
-  scroll-snap-align: start;
 }
 .card a {
   text-align: center;

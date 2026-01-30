@@ -29,7 +29,7 @@ export default [
     imagePath: '/termostato.webp',
     imageAlt: 'Imagen de termostatos inteligente optihome',
     title: 'Comodidad',
-    urlContent: 'Ver termostatos',
+    urlContent: 'Ver termostatos y calefacciones',
     path: '/shop/section/ilumination',
   },
 ]

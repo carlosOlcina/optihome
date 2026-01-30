@@ -73,8 +73,9 @@ main {
 }
 .product-container {
   display: flex;
-  gap: 2rem;
   padding: 0 5rem;
+  width: fit-content;
+  gap: 2rem;
 }
 .product-container::-webkit-scrollbar {
   display: none;
