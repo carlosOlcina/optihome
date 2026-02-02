@@ -1,4 +1,10 @@
-<button (click)="action()">
+<button
+  (click)="onClick()"
+  [disabled]="disabled()"
+  [attr.aria-label]="ariaLabel()"
+  [attr.aria-hidden]="ariaHidden()"
+  [attr.aria-controls]="ariaControls()"
+>
   @switch (direction()){ @case ('right'){
   <lucide-icon [img]="chevronRightIcon" aria-hidden="true"></lucide-icon>
   } @case ('left'){

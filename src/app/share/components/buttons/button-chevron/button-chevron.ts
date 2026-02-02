@@ -8,11 +8,21 @@ import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, Luci
   styleUrl: './button-chevron.css',
 })
 export class ButtonChevron {
-  direction = input<Direction>('right')
-  action = input.required<() => void>()
+  readonly direction = input<Direction>('right')
+  readonly action = input.required<() => void>()
+  readonly disabled = input<boolean>(false)
+
+  // Aria inputs
+  readonly ariaLabel = input<string>('chevron')
+  readonly ariaHidden = input<boolean>(false)
+  readonly ariaControls = input<string>()
 
   chevronRightIcon = ChevronRightIcon
   chevronLeftIcon = ChevronLeftIcon
   chevronUpIcon = ChevronUpIcon
   chevronDownIcon = ChevronDownIcon
+
+  onClick(): void {
+    this.action()()
+  }
 }

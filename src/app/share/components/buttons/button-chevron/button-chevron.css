@@ -11,10 +11,14 @@ button {
   transition: scale 0.2s ease-in-out;
 }
 
-button:hover {
+button:hover:not(:disabled) {
   scale: 1.1;
 }
 
-button:active {
+button:active:not(:disabled) {
   scale: 0.9;
+}
+
+button:disabled {
+  opacity: 0.5;
 }
