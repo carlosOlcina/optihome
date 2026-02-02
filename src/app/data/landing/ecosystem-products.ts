@@ -23,7 +23,6 @@ export default [
     urlContent: 'Ver iluminación, enchufes e interruptores',
     path: '/shop/section/ilumination',
   },
-  // TODO Implement images products
   {
     id: '_9zlshD7egYRMGOm83sh1',
     imagePath: '/termostato.webp',
@@ -31,5 +30,21 @@ export default [
     title: 'Comodidad',
     urlContent: 'Ver termostatos y calefacciones',
     path: '/shop/section/ilumination',
+  },
+  {
+    id: 'gx7QX-5pXl71lzyCJ7tDh',
+    imagePath: '/timbre.webp',
+    imageAlt: 'Imagen de timbre inteligente optihome',
+    title: 'Entrada',
+    urlContent: 'Ver timbres y cerraduras',
+    path: '/shop/section/entrance',
+  },
+  {
+    id: 'fdeS-0tQOCD4fYPZwsKL_',
+    imagePath: '/aspiradora.webp',
+    imageAlt: 'Imagen de aspiradora inteligente optihome',
+    title: 'Limpieza',
+    urlContent: 'Ver aspiradoras y ambientadores',
+    path: '/shop/section/cleanliness',
   },
 ]
