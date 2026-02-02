@@ -1,0 +1,20 @@
+:host {
+  width: fit-content;
+}
+
+button {
+  border: 1px solid var(--neutral-700);
+  padding: 0.5rem;
+
+  border-radius: 50%;
+
+  transition: scale 0.2s ease-in-out;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+button:active {
+  scale: 0.9;
+}

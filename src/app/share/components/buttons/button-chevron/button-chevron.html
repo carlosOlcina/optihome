@@ -1,0 +1,11 @@
+<button (click)="action()">
+  @switch (direction()){ @case ('right'){
+  <lucide-icon [img]="chevronRightIcon" aria-hidden="true"></lucide-icon>
+  } @case ('left'){
+  <lucide-icon [img]="chevronLeftIcon" aria-hidden="true"></lucide-icon>
+  } @case ('up'){
+  <lucide-icon [img]="chevronUpIcon" aria-hidden="true"></lucide-icon>
+  } @case ('down'){
+  <lucide-icon [img]="chevronDownIcon" aria-hidden="true"></lucide-icon>
+  } }
+</button>
