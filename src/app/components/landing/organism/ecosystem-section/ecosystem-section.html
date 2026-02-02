@@ -4,7 +4,7 @@
     paragraphContent="Dispositivos diseñados desde cero para funcionar localmente. Compatibles entre sí y con protocolos abiertos"
   ></landing-section-header>
 
-  <div class="scroll-container" #scrollContainer>
+  <div class="scroll-container" #scrollContainer (scrollend)="syncButtons()">
     <div id="ecosystem-products" aria-label="Lista de productos desplazable" role="region">
       @for(product of ecosystemProducts; track product.id){
       <landing-product-card

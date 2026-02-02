@@ -23,8 +23,10 @@ export class EcosystemSection implements AfterViewInit {
     if (!el) return
 
     const scrollWidth = el?.scrollWidth - window.innerWidth
-    if (el.scrollLeft < 100) this.disabledButton.set('left')
-    if (el.scrollLeft > scrollWidth - 100) this.disabledButton.set('right')
+    console.log(scrollWidth, el?.scrollLeft)
+    if (el.scrollLeft < 30) this.disabledButton.set('left')
+    else if (el.scrollLeft > scrollWidth - 30) this.disabledButton.set('right')
+    else this.disabledButton.set(null)
   }
 
   ngAfterViewInit(): void {
