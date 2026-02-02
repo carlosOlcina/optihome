@@ -26,6 +26,7 @@
       direction="left"
       ariaControls="ecosystem-products"
       ariaLabel="Retroceder scroll"
+      [disabled]="disabledButton() === 'left'"
     ></ui-button-chevron>
 
     <ui-button-chevron
@@ -33,6 +34,7 @@
       direction="right"
       ariaControls="ecosystem-products"
       ariaLabel="Avanzar scroll"
+      [disabled]="disabledButton() === 'right'"
     ></ui-button-chevron>
   </div>
 </section>
