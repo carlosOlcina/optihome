@@ -4,7 +4,7 @@
     paragraphContent="Dispositivos diseñados desde cero para funcionar localmente. Compatibles entre sí y con protocolos abiertos"
   ></landing-section-header>
   <div class="scroll-container">
-    <div class="product-container">
+    <div id="ecosystem-products" aria-label="Lista de productos desplazable" role="region">
       @for(product of ecosystemProducts; track product.id){
       <landing-product-card
         class="product"
@@ -16,5 +16,20 @@
       ></landing-product-card>
       }
     </div>
+  </div>
+  <div class="scroll-buttons" role="group" aria-label="Botones de scroll">
+    <ui-button-chevron
+      [action]="onClick"
+      direction="left"
+      ariaControls="ecosystem-products"
+      ariaLabel="Retroceder scroll"
+    ></ui-button-chevron>
+
+    <ui-button-chevron
+      [action]="onClick"
+      direction="right"
+      ariaControls="ecosystem-products"
+      ariaLabel="Avanzar scroll"
+    ></ui-button-chevron>
   </div>
 </section>

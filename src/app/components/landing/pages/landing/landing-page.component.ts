@@ -7,7 +7,6 @@ import { LucideAngularModule, ShieldIcon, WifiIcon, ZapIcon } from 'lucide-angul
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
 import { CardLanding } from '../../molecules/card/card'
 import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
-import { ProductCardLanding } from '../../molecules/product-card/product-card'
 import { NgStyle } from '@angular/common'
 import StepsData from '../../../../data/landing/config-steps'
 import BenefitsCards from '../../../../data/landing/benefits-cards'
@@ -22,7 +21,6 @@ import { EcosystemSection } from '../../organism/ecosystem-section/ecosystem-sec
     LucideAngularModule,
     CardLanding,
     SectionHeaderLanding,
-    ProductCardLanding,
     NgStyle,
     EcosystemSection,
   ],

@@ -11,12 +11,18 @@ section {
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
 }
-.product-container {
+#ecosystem-products {
   display: flex;
   padding: 0 5rem;
   width: fit-content;
   gap: 2rem;
 }
-.product-container::-webkit-scrollbar {
+#ecosystem-products::-webkit-scrollbar {
   display: none;
+}
+
+.scroll-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
