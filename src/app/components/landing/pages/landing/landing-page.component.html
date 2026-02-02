@@ -37,26 +37,7 @@
     </div>
   </section>
 
-  <section id="ecosystem">
-    <landing-section-header
-      titleContent="Ecosistema OptiHome"
-      paragraphContent="Dispositivos diseñados desde cero para funcionar localmente. Compatibles entre sí y con protocolos abiertos"
-    ></landing-section-header>
-    <div class="scroll-container">
-      <div class="product-container">
-        @for(product of ecosystemProducts; track product.id){
-        <landing-product-card
-          class="product"
-          [imageUrl]="product.imagePath"
-          [imageAlt]="product.imageAlt"
-          [titleContent]="product.title"
-          [urlContent]="product.urlContent"
-          [urlPath]="product.path"
-        ></landing-product-card>
-        }
-      </div>
-    </div>
-  </section>
+  <landing-ecosystem-section></landing-ecosystem-section>
 
   <section id="how-it-works">
     <landing-section-header

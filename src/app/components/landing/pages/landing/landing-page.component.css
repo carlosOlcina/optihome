@@ -58,29 +58,6 @@ main {
   width: 30%;
 }
 
-#ecosystem {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.scroll-container {
-  width: 100vw;
-
-  overflow-x: auto;
-  scrollbar-width: none;
-  scroll-snap-type: x mandatory;
-}
-.product-container {
-  display: flex;
-  padding: 0 5rem;
-  width: fit-content;
-  gap: 2rem;
-}
-.product-container::-webkit-scrollbar {
-  display: none;
-}
-
 #how-it-works {
   display: flex;
   flex-direction: column;

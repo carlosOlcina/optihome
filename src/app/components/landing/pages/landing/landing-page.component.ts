@@ -12,6 +12,7 @@ import { NgStyle } from '@angular/common'
 import StepsData from '../../../../data/landing/config-steps'
 import BenefitsCards from '../../../../data/landing/benefits-cards'
 import EcosystemProducts from '../../../../data/landing/ecosystem-products'
+import { EcosystemSection } from '../../organism/ecosystem-section/ecosystem-section'
 
 @Component({
   selector: 'landing-page',
@@ -23,6 +24,7 @@ import EcosystemProducts from '../../../../data/landing/ecosystem-products'
     SectionHeaderLanding,
     ProductCardLanding,
     NgStyle,
+    EcosystemSection,
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
