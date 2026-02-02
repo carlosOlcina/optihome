@@ -3,10 +3,12 @@
     titleContent="Ecosistema OptiHome"
     paragraphContent="Dispositivos diseñados desde cero para funcionar localmente. Compatibles entre sí y con protocolos abiertos"
   ></landing-section-header>
-  <div class="scroll-container">
+
+  <div class="scroll-container" #scrollContainer>
     <div id="ecosystem-products" aria-label="Lista de productos desplazable" role="region">
       @for(product of ecosystemProducts; track product.id){
       <landing-product-card
+        id="product-{{ product.id }}"
         class="product"
         [imageUrl]="product.imagePath"
         [imageAlt]="product.imageAlt"
@@ -17,16 +19,17 @@
       }
     </div>
   </div>
+
   <div class="scroll-buttons" role="group" aria-label="Botones de scroll">
     <ui-button-chevron
-      [action]="onClick"
+      [action]="scrollLeft"
       direction="left"
       ariaControls="ecosystem-products"
       ariaLabel="Retroceder scroll"
     ></ui-button-chevron>
 
     <ui-button-chevron
-      [action]="onClick"
+      [action]="scrollRight"
       direction="right"
       ariaControls="ecosystem-products"
       ariaLabel="Avanzar scroll"

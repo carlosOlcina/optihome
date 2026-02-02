@@ -11,6 +11,10 @@ section {
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
 }
+.product {
+  scroll-snap-align: center;
+}
+
 #ecosystem-products {
   display: flex;
   padding: 0 5rem;

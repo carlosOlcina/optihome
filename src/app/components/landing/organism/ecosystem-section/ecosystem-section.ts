@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, ElementRef, ViewChild } from '@angular/core'
 import { ProductCardLanding } from '../../molecules/product-card/product-card'
 import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
 import ecosystemProducts from '../../../../data/landing/ecosystem-products'
@@ -12,7 +12,17 @@ import { ButtonChevron } from '../../../../share/components/buttons/button-chevr
 })
 export class EcosystemSection {
   protected readonly ecosystemProducts = ecosystemProducts
-  onClick() {
-    console.log('onClick')
+
+  @ViewChild('scrollContainer', { read: ElementRef })
+  private readonly scrollContainer?: ElementRef<HTMLElement>
+
+  private scrollByAmount(amount: number) {
+    const el = this.scrollContainer?.nativeElement
+    if (!el) return
+
+    el.scrollBy({ left: amount, behavior: 'smooth' })
   }
+
+  scrollLeft = () => this.scrollByAmount(-320)
+  scrollRight = () => this.scrollByAmount(320)
 }
