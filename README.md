@@ -1,59 +1,61 @@
-# Trabajos
+# Optihome
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+Plataforma web de domótica local desarrollada en Angular. Simula una tienda de dispositivos inteligentes y su gestión desde una red local.
 
-## Development server
+**Es un producto académico no es real**
+![Optihome](public/landing-screenshot.png)
 
-To start a local development server, run:
+# Stack tecnológico
 
-```bash
-ng serve
-```
+- Angular 21
+- Node 24
+- Typescript
+- CSS nativo
+- PNPM
+- Husky
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Requisitos
 
-## Code scaffolding
+- Node LTS instalar en [node](https://nodejs.org/es/download)
+- pnpm instalar `npm i -g pnpm`
+- Angular CLI instalar `npm i -g @angular/cli`
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+# Instalación y ejecución
 
-```bash
-ng generate component component-name
-```
+## Instalación
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Instalar node en [node](https://nodejs.org/es/download)
+- Instalar Angular CLI `npm i -g @angular/cli`
+- Instalar pnpm `npm i -g pnpm`
+- Clonar el repositorio
+- Instalar dependencias `pnpm i`
+- Setup de husky `pnpm prepare`
 
-```bash
-ng generate --help
-```
+## Ejecución
 
-## Building
+- Ejecutar servidor en local`ng serve`
+- Ejecutar pruebas unitarias `ng test`
 
-To build the project run:
+# Limitaciones conocidas
 
-```bash
-ng build
-```
+- No tiene backend
+- Datos simulados
+- Sin persistencia por falta de DB
+- No hay autenticación
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+# Próximas mejoras
 
-## Running unit tests
+- Backend real
+- DB funcional
+- Autenticación
+- Panel de administración
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+# Autoría
 
-```bash
-ng test
-```
+- **Autor:** Carlos Olcina Mazón
+- **Curso:** 2SMRA Aplicaciones Web
+- **Año:** 2026
 
-## Running end-to-end tests
+# Licencia
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Proyecto bajo licencia [Apache License 2.0](./LICENSE)
