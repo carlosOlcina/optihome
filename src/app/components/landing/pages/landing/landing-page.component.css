@@ -1,7 +1,8 @@
 .hero {
-  height: calc(100vh - var(--header-height-landing));
+  min-height: calc(100vh - var(--header-height-landing));
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 main {
@@ -10,73 +11,95 @@ main {
   flex-direction: column;
   gap: 6rem;
   align-items: center;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .other-content {
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
 
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .benefits-hero {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .benefits-hero li {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 #benefits {
-  height: calc(100vh - var(--header-height-landing));
-  width: 100vw;
+  min-height: calc(100vh - var(--header-height-landing));
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 0 3rem;
+  gap: 3rem;
+  padding: 4rem 1.5rem;
 }
 
 .card-container {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  justify-items: center;
 }
 
-.card-container * {
-  width: 30%;
+.card-container landing-card {
+  width: 100%;
+  max-width: 400px;
 }
 
 #how-it-works {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  padding: 4rem 1.5rem;
 }
 
-#how-it-works ol {
+#how-it-works .steps-list {
   position: relative;
   display: grid;
-  grid-template-columns: 45% 10% 45%;
-  width: 100vw;
+  grid-template-columns: 1fr 4rem 1fr;
+  width: 100%;
+  max-width: 1000px;
+  gap: 2rem 0;
 }
-#how-it-works li {
+
+.step-item {
   display: flex;
   gap: 1rem;
+  width: 90%;
+}
 
-  justify-self: center;
-  align-self: center;
-  width: 70%;
+.step-even {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.step-odd {
+  grid-column: 3;
+  justify-self: start;
 }
 
 .step-number {
@@ -94,34 +117,93 @@ main {
   box-shadow: 0 0 10px 6px var(--brand-100);
   border-radius: 50%;
 
-  height: 4rem;
-  width: 4rem;
-
-  font-size: 1.2rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  z-index: 2;
 }
 
 .steps-count-line {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: -1;
+  z-index: 1;
 
-  height: 100%;
   width: 2px;
-
   background: var(--brand-500);
 }
 
 .final {
-  padding: 0 0 20vh;
+  padding: 4rem 1.5rem 10rem;
+  width: 100%;
 }
 
 .benefits-final {
   display: flex;
-  gap: 2rem;
-  list-style: disc;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
 }
-.benefits-final li::marker {
+
+.benefits-final li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.benefits-final li::before {
+  content: '•';
   color: var(--brand-600);
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  #how-it-works .steps-list {
+    grid-template-columns: 4rem 1fr;
+    gap: 3rem 1rem;
+  }
+
+  .step-item {
+    grid-column: 2 !important;
+    justify-self: start !important;
+    width: 100%;
+  }
+
+  .step-number {
+    grid-column: 1;
+  }
+
+  .steps-count-line {
+    left: 2rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-hero {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    gap: 4rem;
+  }
+
+  #benefits,
+  #how-it-works {
+    padding: 2rem 1rem;
+  }
+
+  .hero,
+  .final {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
