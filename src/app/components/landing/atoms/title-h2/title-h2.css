@@ -3,3 +3,9 @@ h2 {
   font-size: 3rem;
   color: var(--brand-950);
 }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
