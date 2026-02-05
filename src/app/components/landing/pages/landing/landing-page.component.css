@@ -46,7 +46,7 @@ main {
 #benefits {
   min-height: calc(100vh - var(--header-height-landing));
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +58,7 @@ main {
 .card-container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
   justify-items: center;
 }
@@ -154,12 +154,6 @@ main {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.benefits-final li::before {
-  content: '•';
-  color: var(--brand-600);
-  font-weight: bold;
 }
 
 @media (max-width: 900px) {
