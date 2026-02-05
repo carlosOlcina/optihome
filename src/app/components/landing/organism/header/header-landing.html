@@ -1,13 +1,24 @@
 <header>
-  <a routerLink="/landing" class="logo">
+  <a routerLink="/landing" class="logo" (click)="closeMenu()">
     <app-logo size="2.5rem"></app-logo>
     <span>Optihome</span>
   </a>
-  <nav>
-    <a routerLink="/landing" fragment="benefits" class="link">Beneficios</a>
-    <a routerLink="/landing" fragment="ecosystem" class="link">Productos</a>
-    <a routerLink="/landing" fragment="how-it-works" class="link">Como funciona</a>
+
+  <button
+    class="mobile-menu-toggle"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="isMenuOpen()"
+    aria-label="Toggle menu"
+  >
+    <lucide-icon [img]="isMenuOpen() ? xIcon : menuIcon"></lucide-icon>
+  </button>
+
+  <nav [class.open]="isMenuOpen()">
+    <a routerLink="/landing" fragment="benefits" class="link" (click)="closeMenu()">Beneficios</a>
+    <a routerLink="/landing" fragment="ecosystem" class="link" (click)="closeMenu()">Productos</a>
+    <a routerLink="/landing" fragment="how-it-works" class="link" (click)="closeMenu()">Como funciona</a>
+    <ui-primary-button class="mobile-only" [action]="navigateToMain">Comenzar</ui-primary-button>
   </nav>
 
-  <ui-primary-button [action]="navigateToMain">Comenzar</ui-primary-button>
+  <ui-primary-button class="desktop-only" [action]="navigateToMain">Comenzar</ui-primary-button>
 </header>
