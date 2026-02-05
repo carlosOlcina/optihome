@@ -25,3 +25,9 @@
   display: inline-block;
   height: 1rem;
 }
+
+@media (max-width: 768px) {
+  .card {
+    width: 90vw;
+  }
+}
