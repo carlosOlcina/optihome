@@ -44,14 +44,14 @@
       titleContent="Así de simple"
       paragraphContent="Configurar tu hogar inteligente nunca fue tan fácil. Sin cuentas en la nube, sin configuraciones complejas"
     ></landing-section-header>
-    <ol [ngStyle]="{ gridTemplateRows: `repeat(${stepsData.length}, 1fr)` }">
+    <ol class="steps-list">
       @for (step of stepsData; track step.id; let index = $index; let even = $even) {
       <ng-container>
-        <li [ngStyle]="{ 'grid-column': even ? 1 : 3, 'grid-row': index + 1, justifySelf: even ? 'end' : 'start' }">
+        <li class="step-item" [class.step-even]="even" [class.step-odd]="!even" [style.grid-row]="index + 1">
           <landing-card [icon]="step.icon" [titleText]="step.title" [descriptionText]="step.description"></landing-card>
         </li>
         <!-- TODO Preguntar al profe -->
-        <div class="step-number" aria-hidden="true">{{ index + 1 }}</div>
+        <div class="step-number" [style.grid-row]="index + 1" aria-hidden="true">{{ index + 1 }}</div>
       </ng-container>
       }
       <div class="steps-count-line" aria-hidden="true"></div>
