@@ -2,31 +2,40 @@ section {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 100%;
 }
 
 .scroll-container {
-  width: 100vw;
-
+  width: 100%;
   overflow-x: auto;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
 .product {
   scroll-snap-align: center;
 }
 
 #ecosystem-products {
   display: flex;
-  padding: 0 5rem;
+  padding: 0 1.5rem;
   width: fit-content;
   gap: 2rem;
-}
-#ecosystem-products::-webkit-scrollbar {
-  display: none;
 }
 
 .scroll-buttons {
   display: flex;
   gap: 2rem;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  #ecosystem-products {
+    padding: 0 5rem;
+  }
 }

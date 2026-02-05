@@ -4,15 +4,25 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 100vw;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .title {
-  width: 50%;
+  width: 100%;
+  max-width: 800px;
 }
 
 .paragraph {
   display: block;
-  width: 50%;
+  width: 100%;
+  max-width: 600px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title,
+  .paragraph {
+    max-width: 100%;
+  }
 }

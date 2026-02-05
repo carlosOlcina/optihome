@@ -3,10 +3,12 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 
-  width: fit-content;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 4rem 1.5rem;
 
   background: radial-gradient(circle at 50% 45%, var(--brand-200) 0%, var(--brand-50) 50%);
 }
@@ -15,7 +17,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 h1 {
@@ -23,6 +26,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 h1 * {
@@ -31,11 +35,12 @@ h1 * {
 }
 
 .paragraph {
-  width: 80%;
+  width: 100%;
+  max-width: 800px;
 }
 
 .title {
-  margin-bottom: -1.5rem;
+  color: var(--brand-950);
 }
 
 .highlight {
@@ -45,13 +50,13 @@ h1 * {
   color: var(--brand-600);
 }
 
-.title {
-  color: var(--brand-950);
-}
-
 @media (max-width: 768px) {
+  section {
+    padding: 3rem 1rem;
+  }
+
   header {
-    width: 90%;
+    gap: 1rem;
   }
 
   h1 * {
