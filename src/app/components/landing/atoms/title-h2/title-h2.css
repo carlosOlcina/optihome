@@ -1,11 +1,6 @@
 h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   color: var(--brand-950);
-}
-
-@media (max-width: 768px) {
-  h2 {
-    font-size: 2rem;
-  }
+  line-height: 1.2;
 }
