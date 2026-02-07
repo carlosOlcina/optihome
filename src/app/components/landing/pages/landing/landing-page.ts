@@ -34,7 +34,7 @@ export class LandingPage {
   readonly shieldIcon = ShieldIcon
 
   navigateToMain = () => {
-    void this.router.navigate(['/shop'])
+    void this.router.navigate(['/landing/wait-list'])
   }
 
   readonly SizeEnum = SizeEnum

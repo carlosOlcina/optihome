@@ -28,7 +28,6 @@ export class HeaderLanding {
 
   navigateToMain = () => {
     this.closeMenu()
-    void this.router.navigate(['/landing'])
-    console.log('navigateToMain')
+    void this.router.navigate(['/landing/wait-list'])
   }
 }
