@@ -1,5 +1,5 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core'
-import { provideRouter, withInMemoryScrolling } from '@angular/router'
+import { provideRouter, withInMemoryScrolling, withViewTransitions } from '@angular/router'
 
 import { routes } from './app.routes'
 
@@ -12,6 +12,7 @@ export const appConfig: ApplicationConfig = {
         anchorScrolling: 'enabled',
         scrollPositionRestoration: 'enabled',
       }),
+      withViewTransitions({ skipInitialTransition: true }),
     ),
   ],
 }

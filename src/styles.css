@@ -9,5 +9,4 @@ html {
   scrollbar-color: var(--neutral-300) var(--brand-50);
 
   background: var(--brand-50);
-  scroll-behavior: smooth;
 }
