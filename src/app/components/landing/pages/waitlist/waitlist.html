@@ -1,0 +1,23 @@
+<div class="container">
+  <landing-cta-section
+    class="waitlist"
+    contentTitle="Entera el primero"
+    contentHighlight="Únete a la lista de espera"
+    [contentParagraph]="`Se el primero en conocer nuestro lanzamineto y obtén ofertas exclusivas.
+    Sin Spam, solo novedades importantes`"
+  >
+  </landing-cta-section>
+
+  <form (submit)="onSubmit($event)" novalidate>
+    <input
+      type="email"
+      placeholder="tu@email.com"
+      [formField]="suscribeForm.email"
+      aria-label="Introduce tu email"
+      [ngClass]="{invalid: suscribeForm.email().touched() && suscribeForm.email().invalid()}"
+    />
+    <ui-primary-button [action]="buttonAction" [size]="SizeEnum.large">Enviar</ui-primary-button>
+  </form>
+
+  <p>{{subscribers()}} personas ya están en la lista</p>
+</div>
