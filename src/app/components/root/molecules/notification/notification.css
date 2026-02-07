@@ -1,0 +1,12 @@
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background: var(--neutral-50);
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 0 5px var(--neutral-100);
+}

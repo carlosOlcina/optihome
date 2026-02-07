@@ -1,0 +1,16 @@
+<li attr.role="alert">
+  @switch (type()) { @case (NotificationEnum.Error){
+  <div>
+    <lucide-icon [img]="circleXIcon" aria-hidden="true" size="30" color="#F44336"></lucide-icon>
+  </div>
+  } @case (NotificationEnum.Warning){
+  <div>
+    <lucide-icon [img]="circleAlertIcon" aria-hidden="true" size="30" color="#FFC107"></lucide-icon>
+  </div>
+  } @case (NotificationEnum.Success){
+  <div>
+    <lucide-icon [img]="circleCheckIcon" aria-hidden="true" size="30" color="#4CAF50"></lucide-icon>
+  </div>
+  }}
+  <ng-content></ng-content>
+</li>
