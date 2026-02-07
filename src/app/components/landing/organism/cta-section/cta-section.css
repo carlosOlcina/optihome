@@ -10,7 +10,7 @@ section {
   margin: 0 auto;
   padding: 4rem 1.5rem;
 
-  background: radial-gradient(circle at 50% 45%, var(--brand-200) 0%, var(--brand-50) 50%);
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, var(--brand-200) 0%, var(--brand-50) 60%);
 }
 header {
   display: flex;
@@ -37,6 +37,7 @@ h1 * {
 .paragraph {
   width: 100%;
   max-width: 800px;
+  white-space: pre-line;
 }
 
 .title {
