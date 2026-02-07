@@ -1,5 +1,7 @@
 <ul aria-live="polite" aria-label="false" class="container">
   @for(notification of notificationService.getNotification(); track notification.id){
-  <app-notification [type]="notification.type">{{notification.content}}</app-notification>
+  <app-notification [type]="notification.type" animate.leave="exit-animation" class="notification"
+    >{{notification.content}}</app-notification
+  >
   }
 </ul>

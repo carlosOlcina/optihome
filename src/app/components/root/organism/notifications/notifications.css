@@ -10,3 +10,17 @@
   padding: 1rem;
   z-index: 10000;
 }
+
+.notification {
+  transition: transform 0.2s ease-in-out;
+
+  transform: translateX(0);
+
+  @starting-style {
+    transform: translateX(100vw);
+  }
+}
+
+.exit-animation {
+  transform: translateX(100vw);
+}
