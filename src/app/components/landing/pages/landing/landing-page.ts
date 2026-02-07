@@ -7,7 +7,6 @@ import { LucideAngularModule, ShieldIcon, WifiIcon, ZapIcon } from 'lucide-angul
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
 import { CardLanding } from '../../molecules/card/card'
 import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
-import { NgStyle } from '@angular/common'
 import StepsData from '../../../../data/landing/config-steps'
 import BenefitsCards from '../../../../data/landing/benefits-cards'
 import EcosystemProducts from '../../../../data/landing/ecosystem-products'
@@ -21,11 +20,10 @@ import { EcosystemSection } from '../../organism/ecosystem-section/ecosystem-sec
     LucideAngularModule,
     CardLanding,
     SectionHeaderLanding,
-    NgStyle,
     EcosystemSection,
   ],
-  templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.css',
+  templateUrl: './landing-page.html',
+  styleUrl: './landing-page.css',
 })
 export class LandingPage {
   private readonly router = inject(Router)
