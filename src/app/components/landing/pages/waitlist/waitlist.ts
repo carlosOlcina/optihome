@@ -5,6 +5,7 @@ import { SizeEnum } from '../../../../config/enums/size-enum'
 import { FormsModule } from '@angular/forms'
 import { email, form, FormField, required, submit } from '@angular/forms/signals'
 import { NgClass } from '@angular/common'
+import { ParagraphLanding } from '../../atoms/paragraph/paragraph'
 
 interface SuscribeData {
   email: string
@@ -12,7 +13,7 @@ interface SuscribeData {
 
 @Component({
   selector: 'landing-waitlist',
-  imports: [LandingCtaSection, PrimaryButtonShared, FormsModule, NgClass, FormField],
+  imports: [LandingCtaSection, PrimaryButtonShared, FormsModule, NgClass, FormField, ParagraphLanding],
   templateUrl: './waitlist.html',
   styleUrl: './waitlist.css',
 })

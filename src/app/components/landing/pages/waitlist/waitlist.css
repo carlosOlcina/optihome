@@ -41,3 +41,13 @@ input:focus {
 .invalid {
   border: 2px solid #dc2626;
 }
+
+@media (max-width: 800px) {
+  form {
+    gap: 0.5rem;
+  }
+
+  input {
+    width: 15rem;
+  }
+}
