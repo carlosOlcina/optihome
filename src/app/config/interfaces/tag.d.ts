@@ -4,6 +4,6 @@ declare global {
   export interface TagItem {
     id: string
     title: string
-    icon: LucideIconData
+    icon?: LucideIconData
   }
 }
