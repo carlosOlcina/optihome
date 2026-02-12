@@ -1,35 +1,20 @@
 import { Component, inject } from '@angular/core'
-import { LandingCtaSection } from '../../organism/cta-section/cta-section'
-import { PrimaryButtonShared } from '../../../../share/components/buttons/primary-button/primary-button'
 import { Router } from '@angular/router'
-import { SizeEnum } from '../../../../config/enums/size-enum'
 import { LucideAngularModule } from 'lucide-angular'
-import { CardLanding } from '../../molecules/card/card'
-import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
 import StepsData from '../../../../data/landing/config-steps'
 import BenefitsCards from '../../../../data/landing/benefits-cards'
 import EcosystemProducts from '../../../../data/landing/ecosystem-products'
 import { EcosystemSection } from '../../organism/ecosystem-section/ecosystem-section'
-import { Tag } from '../../atoms/tag/tag'
 import { BenefitsSection } from '../../organism/benefits-section/benefits-section'
 import { StepsSection } from '../../organism/steps-section/steps-section'
 import { HeroSection } from '../../organism/hero-section/hero-section'
 import { BenefitsHeroTags } from '../../../../data/landing/benefits-hero-tags'
+import { FinalSection } from '../../organism/final-section/final-section'
+import { BenefitsFinalTags } from '../../../../data/landing/benefits-final'
 
 @Component({
   selector: 'landing-page',
-  imports: [
-    LandingCtaSection,
-    PrimaryButtonShared,
-    LucideAngularModule,
-    CardLanding,
-    SectionHeaderLanding,
-    EcosystemSection,
-    Tag,
-    BenefitsSection,
-    StepsSection,
-    HeroSection,
-  ],
+  imports: [LucideAngularModule, EcosystemSection, BenefitsSection, StepsSection, HeroSection, FinalSection],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.css',
 })
@@ -40,9 +25,8 @@ export class LandingPage {
     void this.router.navigate(['/landing/wait-list'])
   }
 
-  readonly SizeEnum = SizeEnum
-
-  readonly benefitsTags = BenefitsHeroTags
+  readonly benefitsHeroTags = BenefitsHeroTags
+  readonly benefitsFinalTags = BenefitsFinalTags
   readonly benefitsCards = BenefitsCards
   readonly ecosystemProducts = EcosystemProducts
   readonly stepsData = StepsData

@@ -1,5 +1,5 @@
 <main>
-  <landing-hero-section [benefitsTags]="benefitsTags" [linkAction]="navigateToMain"></landing-hero-section>
+  <landing-hero-section [benefitsTags]="benefitsHeroTags" [linkAction]="navigateToMain"></landing-hero-section>
 
   <landing-benefits-section [benefits]="benefitsCards"></landing-benefits-section>
 
@@ -7,20 +7,5 @@
 
   <landing-steps-section [steps]="stepsData"></landing-steps-section>
 
-  <landing-cta-section
-    class="final"
-    contentTitle="Recupera el control de"
-    contentHighlight="tu hogar inteligente"
-    contentParagraph="Únete a miles de hogares que han elegido la privacidad y el control local. Tu casa, tus reglas, tus datos."
-  >
-    <div class="other-content">
-      <ui-primary-button [action]="navigateToMain" [size]="SizeEnum.large">Empezar ahora</ui-primary-button>
-
-      <ul class="benefits-final">
-        <landing-tag role="listitem"> Envío gratuito </landing-tag>
-        <landing-tag role="listitem"> 30 días de devolución </landing-tag>
-        <landing-tag role="listitem"> Garantía de 3 años </landing-tag>
-      </ul>
-    </div>
-  </landing-cta-section>
+  <landing-final-section [benefitTags]="benefitsFinalTags" [actionInput]="navigateToMain"></landing-final-section>
 </main>

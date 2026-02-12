@@ -1,0 +1,16 @@
+<landing-cta-section
+  class="final"
+  contentTitle="Recupera el control de"
+  contentHighlight="tu hogar inteligente"
+  contentParagraph="Únete a miles de hogares que han elegido la privacidad y el control local. Tu casa, tus reglas, tus datos."
+>
+  <div class="other-content">
+    <ui-primary-button [action]="actionInput()" [size]="SizeEnum.large">Empezar ahora</ui-primary-button>
+
+    <ul class="benefits-final">
+      @for (tag of benefitTags(); track tag.id){
+      <landing-tag role="listitem"> {{ tag.title }} </landing-tag>
+      }
+    </ul>
+  </div>
+</landing-cta-section>

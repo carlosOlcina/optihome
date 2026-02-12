@@ -1,4 +1,4 @@
-export const BenefitsHeroTags: TagItem[] = [
+export const BenefitsFinalTags: TagItem[] = [
   {
     id: 'RVO_nVFqePjqFPzyamzIP',
     title: 'Envío gratuito',
