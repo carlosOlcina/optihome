@@ -1,7 +1,7 @@
 import { LucideIconData } from 'lucide-angular'
 
 declare global {
-  export interface Tag {
+  export interface TagItem {
     id: string
     title: string
     icon: LucideIconData
