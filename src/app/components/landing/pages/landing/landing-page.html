@@ -9,18 +9,9 @@
       <ui-primary-button [action]="navigateToMain" [size]="SizeEnum.large">Descubrir productos</ui-primary-button>
 
       <ul class="benefits-hero">
-        <li>
-          <lucide-icon [img]="shieldIcon" aria-hidden="true" [color]="BrandColorsEnum.Brand400"></lucide-icon>
-          Privacidad total
-        </li>
-        <li>
-          <lucide-icon [img]="zapIcon" aria-hidden="true" [color]="BrandColorsEnum.Brand400"></lucide-icon>
-          Respuesta instantánea
-        </li>
-        <li>
-          <lucide-icon [img]="wifiIcon" aria-hidden="true" [color]="BrandColorsEnum.Brand400"></lucide-icon>
-          Sin Internet
-        </li>
+        <landing-tag role="listitem" [icon]="shieldIcon"> Privacidad total </landing-tag>
+        <landing-tag role="listitem" [icon]="zapIcon"> Respuesta instantánea </landing-tag>
+        <landing-tag role="listitem" [icon]="wifiIcon"> Sin Internet </landing-tag>
       </ul>
     </div>
   </landing-cta-section>
@@ -50,7 +41,7 @@
         <li class="step-item" [class.step-even]="even" [class.step-odd]="!even" [style.grid-row]="index + 1">
           <landing-card [icon]="step.icon" [titleText]="step.title" [descriptionText]="step.description"></landing-card>
         </li>
-        <!-- TODO Preguntar al profe -->
+
         <div class="step-number" [style.grid-row]="index + 1" aria-hidden="true">{{ index + 1 }}</div>
       </ng-container>
       }
@@ -68,9 +59,9 @@
       <ui-primary-button [action]="navigateToMain" [size]="SizeEnum.large">Empezar ahora</ui-primary-button>
 
       <ul class="benefits-final">
-        <li>Envío gratuito</li>
-        <li>30 días de devolución</li>
-        <li>Garantía de 3 años</li>
+        <landing-tag role="listitem"> Envío gratuito </landing-tag>
+        <landing-tag role="listitem"> 30 días de devolución </landing-tag>
+        <landing-tag role="listitem"> Garantía de 3 años </landing-tag>
       </ul>
     </div>
   </landing-cta-section>

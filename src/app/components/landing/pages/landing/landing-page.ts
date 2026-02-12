@@ -11,6 +11,7 @@ import StepsData from '../../../../data/landing/config-steps'
 import BenefitsCards from '../../../../data/landing/benefits-cards'
 import EcosystemProducts from '../../../../data/landing/ecosystem-products'
 import { EcosystemSection } from '../../organism/ecosystem-section/ecosystem-section'
+import { Tag } from '../../atoms/tag/tag'
 
 @Component({
   selector: 'landing-page',
@@ -21,6 +22,7 @@ import { EcosystemSection } from '../../organism/ecosystem-section/ecosystem-sec
     CardLanding,
     SectionHeaderLanding,
     EcosystemSection,
+    Tag,
   ],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.css',
