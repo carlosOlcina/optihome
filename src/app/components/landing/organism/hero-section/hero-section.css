@@ -3,9 +3,11 @@
 }
 
 .hero {
+  margin-top: var(--header-height-landing);
   min-height: calc(100vh - var(--header-height-landing));
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
