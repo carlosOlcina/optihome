@@ -16,17 +16,7 @@
     </div>
   </landing-cta-section>
 
-  <section id="benefits">
-    <landing-section-header
-      titleContent="¿Por qué local?"
-      paragraphContent="La domótica depende de servidores externos. Nosotros creemos que tu hogar deberóa funcionar para ti, no para corporaciones"
-    ></landing-section-header>
-    <div class="card-container">
-      @for (card of benefitsCards; track card.id) {
-      <landing-card [icon]="card.icon" [titleText]="card.title" [descriptionText]="card.description"></landing-card>
-      }
-    </div>
-  </section>
+  <landing-benefits-section [benefits]="benefitsCards"></landing-benefits-section>
 
   <landing-ecosystem-section></landing-ecosystem-section>
 

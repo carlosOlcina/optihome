@@ -12,6 +12,7 @@ import BenefitsCards from '../../../../data/landing/benefits-cards'
 import EcosystemProducts from '../../../../data/landing/ecosystem-products'
 import { EcosystemSection } from '../../organism/ecosystem-section/ecosystem-section'
 import { Tag } from '../../atoms/tag/tag'
+import { BenefitsSection } from '../../organism/benefits-section/benefits-section'
 
 @Component({
   selector: 'landing-page',
@@ -23,6 +24,7 @@ import { Tag } from '../../atoms/tag/tag'
     SectionHeaderLanding,
     EcosystemSection,
     Tag,
+    BenefitsSection,
   ],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.css',
