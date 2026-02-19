@@ -2,7 +2,7 @@ import { Component, input } from '@angular/core'
 import { ChevronRightIcon, LucideAngularModule } from 'lucide-angular'
 import { NgOptimizedImage } from '@angular/common'
 import { RouterLink } from '@angular/router'
-import { TitleH3Landing } from '../../atoms/title-h3/title-h3.component'
+import { TitleH3Landing } from '../../atoms/title-h3/title-h3'
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
 
 @Component({

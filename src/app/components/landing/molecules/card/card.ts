@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core'
 import { LucideAngularModule, LucideIconData } from 'lucide-angular'
 import { BrandColorsEnum } from '../../../../config/enums/colors/brand-colors-enum'
-import { TitleH3Landing } from '../../atoms/title-h3/title-h3.component'
+import { TitleH3Landing } from '../../atoms/title-h3/title-h3'
 import { ParagraphLanding } from '../../atoms/paragraph/paragraph'
 
 @Component({
