@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "format": "prettier --write \"src/**/*.{ts,html,css,scss}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "serve:ssr:Trabajos": "node dist/Trabajos/server/server.mjs"
   },
   "private": true,
   "packageManager": "pnpm@10.28.0",
@@ -20,9 +21,12 @@
     "@angular/core": "^21.1.0",
     "@angular/forms": "^21.1.0",
     "@angular/platform-browser": "^21.1.0",
+    "@angular/platform-server": "^21.1.0",
     "@angular/router": "^21.1.0",
+    "@angular/ssr": "^21.1.0",
     "@eslint/js": "^9.39.2",
     "@fontsource/poppins": "^5.2.7",
+    "express": "^5.1.0",
     "lucide-angular": "^0.562.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
@@ -38,6 +42,8 @@
     "@angular/compiler-cli": "^21.1.0",
     "@commitlint/cli": "^20.3.1",
     "@commitlint/config-conventional": "^20.3.1",
+    "@types/express": "^5.0.1",
+    "@types/node": "^20.17.19",
     "@typescript-eslint/eslint-plugin": "^8.53.1",
     "@typescript-eslint/parser": "^8.53.1",
     "angular-eslint": "^21.1.0",

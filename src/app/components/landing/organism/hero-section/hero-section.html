@@ -1,0 +1,17 @@
+<landing-cta-section
+  class="hero"
+  contentTitle="Tu hogar inteligente,"
+  contentHighlight="sin dependencias externas"
+  contentParagraph="Automatización del hogar que funciona sin internet, sin servidores en la nube, sin suscripciones. Tus datos nunca salen de tu casa."
+>
+  <div class="other-content">
+    <ui-primary-button [action]="linkAction()" [size]="SizeEnum.large">Descubrir productos</ui-primary-button>
+
+    <ul class="benefits">
+      @for (tag of benefitsTags(); track tag.id){
+      <landing-tag role="listitem" [icon]="tag.icon"> {{ tag.title }} </landing-tag>
+
+      }
+    </ul>
+  </div>
+</landing-cta-section>

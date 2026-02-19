@@ -1,0 +1,40 @@
+:host {
+  width: 100%;
+}
+
+.final {
+  padding: 4rem 1.5rem 10rem;
+  width: 100%;
+}
+
+.other-content {
+  width: 100%;
+  padding: 1.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.benefits-final {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-final li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .final {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

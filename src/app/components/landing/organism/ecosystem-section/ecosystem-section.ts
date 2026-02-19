@@ -1,8 +1,9 @@
-import { Component, ElementRef, signal, ViewChild, AfterViewInit } from '@angular/core'
+import { Component, ElementRef, signal, ViewChild, AfterViewInit, PLATFORM_ID, inject } from '@angular/core'
 import { ProductCardLanding } from '../../molecules/product-card/product-card'
 import { SectionHeaderLanding } from '../../molecules/section-header/section-header'
 import ecosystemProducts from '../../../../data/landing/ecosystem-products'
 import { ButtonChevron } from '../../../../share/components/buttons/button-chevron/button-chevron'
+import { isPlatformBrowser } from '@angular/common'
 
 @Component({
   selector: 'landing-ecosystem-section',
@@ -11,6 +12,8 @@ import { ButtonChevron } from '../../../../share/components/buttons/button-chevr
   styleUrl: './ecosystem-section.css',
 })
 export class EcosystemSection implements AfterViewInit {
+  private platformId = inject(PLATFORM_ID)
+
   protected readonly ecosystemProducts = ecosystemProducts
 
   @ViewChild('scrollContainer', { read: ElementRef })
@@ -19,6 +22,7 @@ export class EcosystemSection implements AfterViewInit {
   readonly disabledButton = signal<Direction | null>(null)
 
   syncButtons() {
+    if (!isPlatformBrowser(this.platformId)) return
     const el = this.scrollContainer?.nativeElement
     if (!el) return
 

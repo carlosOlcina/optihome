@@ -1,0 +1,6 @@
+<div [attr.role]="role()" class="tag">
+  @if(icon()){
+  <lucide-icon [img]="icon()" aria-hidden="true" [color]="BrandColorsEnum.Brand400"></lucide-icon>
+  }
+  <ng-content></ng-content>
+</div>

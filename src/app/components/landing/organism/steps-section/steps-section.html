@@ -1,0 +1,18 @@
+<section id="how-it-works">
+  <landing-section-header
+    titleContent="Así de simple"
+    paragraphContent="Configurar tu hogar inteligente nunca fue tan fácil. Sin cuentas en la nube, sin configuraciones complejas"
+  ></landing-section-header>
+  <ol class="steps-list">
+    @for (step of steps(); track step.id; let index = $index; let even = $even) {
+    <ng-container>
+      <li class="step-item" [class.step-even]="even" [class.step-odd]="!even" [style.grid-row]="index + 1">
+        <landing-card [icon]="step.icon" [titleText]="step.title" [descriptionText]="step.description"></landing-card>
+      </li>
+
+      <div class="step-number" [style.grid-row]="index + 1" aria-hidden="true">{{ index + 1 }}</div>
+    </ng-container>
+    }
+    <div class="steps-count-line" aria-hidden="true"></div>
+  </ol>
+</section>
