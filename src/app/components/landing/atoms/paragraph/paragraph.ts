@@ -2,8 +2,10 @@ import { Component, input } from '@angular/core'
 import { NgStyle } from '@angular/common'
 
 /**
- * Componente que representa un párrafo de la landing page.
- * Permite personalizar la alineación del texto mediante la propiedad `centered`.
+ * Representa un componente de párrafo reutilizable para las páginas de aterrizaje.
+ *
+ * Este componente proporciona una forma consistente de mostrar texto descriptivo
+ * en toda la aplicación, permitiendo el centrado opcional del texto.
  */
 @Component({
   selector: 'landing-paragraph',
@@ -13,8 +15,8 @@ import { NgStyle } from '@angular/common'
 })
 export class ParagraphLanding {
   /**
-   * Centra el texto si es true.
-   * Por defecto: false
+   * Indica si el texto debe estar centrado horizontalmente.
+   * Valor predeterminado: false
    */
   centered = input<boolean>(false)
 }

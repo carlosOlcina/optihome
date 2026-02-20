@@ -2,13 +2,11 @@ import { Component } from '@angular/core'
 import { LucideAngularModule } from 'lucide-angular'
 
 /**
- * Representa un componente reutilizable de Angular que muestra un título H3,
- * normalmente usado en landing pages u otras secciones que requieren un encabezado terciario.
+ * Representa un encabezado terciario (H3) reutilizable para las páginas de aterrizaje.
  *
- * El componente `TitleH3Landing` puede ser utilizado en módulos más amplios de la aplicación
- * para mantener consistencia y facilitar el desarrollo de elementos de la interfaz.
+ * Este componente se utiliza a menudo para subencabezados de sección o títulos
+ * de características para proporcionar una jerarquía y estilo consistentes.
  */
-
 @Component({
   selector: 'landing-title-h3',
   imports: [LucideAngularModule],

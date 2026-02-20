@@ -1,11 +1,10 @@
 import { Component } from '@angular/core'
 
 /**
- * Representa un componente reutilizable de Angular que muestra un título H2,
- * normalmente usado en landing pages u otras secciones que requieren un encabezado secundario.
+ * Representa un encabezado secundario (H2) reutilizable para las páginas de aterrizaje.
  *
- * El componente `TitleH2Landing` puede ser utilizado en módulos más amplios de la aplicación
- * para mantener consistencia y simplificar el desarrollo de elementos de la interfaz.
+ * Este componente se utiliza en varias secciones para proporcionar estructura
+ * y mantener la consistencia visual en la tipografía de la aplicación.
  */
 @Component({
   selector: 'landing-title-h2',
