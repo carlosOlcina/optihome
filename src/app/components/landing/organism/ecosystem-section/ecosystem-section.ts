@@ -5,6 +5,13 @@ import ecosystemProducts from '../../../../data/landing/ecosystem-products'
 import { ButtonChevron } from '../../../../share/components/buttons/button-chevron/button-chevron'
 import { isPlatformBrowser } from '@angular/common'
 
+/**
+ * Representa la sección del ecosistema de la página de aterrizaje.
+ *
+ * Muestra el ecosistema de productos mediante una lista desplazable horizontalmente
+ * de componentes ProductCard. Incluye botones de navegación para desplazarse
+ * por los productos.
+ */
 @Component({
   selector: 'landing-ecosystem-section',
   imports: [ProductCardLanding, SectionHeaderLanding, ButtonChevron],
@@ -19,8 +26,14 @@ export class EcosystemSection implements AfterViewInit {
   @ViewChild('scrollContainer', { read: ElementRef })
   private readonly scrollContainer?: ElementRef<HTMLElement>
 
+  /**
+   * Señal que indica qué botón de navegación debe desactivarse según la posición de desplazamiento.
+   */
   readonly disabledButton = signal<Direction | null>(null)
 
+  /**
+   * Sincroniza el estado desactivado de los botones de navegación con la posición de desplazamiento actual.
+   */
   syncButtons() {
     if (!isPlatformBrowser(this.platformId)) return
     const el = this.scrollContainer?.nativeElement
@@ -45,6 +58,13 @@ export class EcosystemSection implements AfterViewInit {
     this.syncButtons()
   }
 
+  /**
+   * Desplaza la lista de productos hacia la izquierda.
+   */
   scrollLeft = () => this.scrollByAmount(-320)
+
+  /**
+   * Desplaza la lista de productos hacia la derecha.
+   */
   scrollRight = () => this.scrollByAmount(320)
 }
