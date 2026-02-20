@@ -12,6 +12,12 @@ import { BenefitsHeroTags } from '../../../../data/landing/benefits-hero-tags'
 import { FinalSection } from '../../organism/final-section/final-section'
 import { BenefitsFinalTags } from '../../../../data/landing/benefits-final'
 
+/**
+ * Representa la página de aterrizaje principal de la aplicación.
+ *
+ * Esta página ensambla todas las diferentes secciones (Hero, Beneficios, Pasos,
+ * Ecosistema y CTA final) para proporcionar una descripción completa del producto.
+ */
 @Component({
   selector: 'landing-page',
   imports: [LucideAngularModule, EcosystemSection, BenefitsSection, StepsSection, HeroSection, FinalSection],
@@ -21,6 +27,9 @@ import { BenefitsFinalTags } from '../../../../data/landing/benefits-final'
 export class LandingPage {
   private readonly router = inject(Router)
 
+  /**
+   * Navega al usuario a la página de registro de la lista de espera.
+   */
   navigateToMain = () => {
     void this.router.navigate(['/landing/wait-list'])
   }
