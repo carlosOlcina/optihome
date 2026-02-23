@@ -2,6 +2,12 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core'
 import { Logo } from '../../../../share/icons/logo/logo'
 import { RouterLink } from '@angular/router'
 
+/**
+ * Representa el componente de pie de página para la página de aterrizaje.
+ *
+ * Proporciona enlaces de navegación del sitio, enlaces sociales e información de derechos de autor,
+ * asegurando una experiencia consistente al final de cada página.
+ */
 @Component({
   selector: 'landing-footer',
   imports: [Logo, RouterLink],
@@ -10,8 +16,14 @@ import { RouterLink } from '@angular/router'
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterLanding {
+  /**
+   * El año actual para la visualización de los derechos de autor.
+   */
   readonly currentYear = signal(new Date().getFullYear())
 
+  /**
+   * Configuración para las diferentes secciones y enlaces dentro del pie de página.
+   */
   readonly footerSections = signal([
     {
       title: 'Productos',
