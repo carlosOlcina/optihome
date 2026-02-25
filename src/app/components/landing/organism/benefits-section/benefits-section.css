@@ -15,10 +15,10 @@
 }
 
 .card-container {
-  width: 100%;
+  width: fit-content;
   display: grid;
   grid-template-columns: repeat(3, minmax(400px, 1fr));
-  gap: 2rem;
+  gap: 4rem;
   justify-items: center;
 }
 
