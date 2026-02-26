@@ -37,4 +37,4 @@ jobs:
       - name: Tests (headless)
         env:
           CI: true
-        run: pnpm test -- --watch=false
+        run: pnpm test --watch=false
