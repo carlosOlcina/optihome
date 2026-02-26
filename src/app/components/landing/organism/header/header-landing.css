@@ -22,10 +22,17 @@ header {
   align-items: center;
   gap: 1rem;
   z-index: 1001;
+  transition: scale 0.2s ease-in-out;
 }
 .logo span {
   font-weight: 600;
   font-size: 1.1rem;
+}
+.logo:hover {
+  scale: 1.1;
+}
+.logo:active {
+  scale: 1;
 }
 
 .mobile-menu-toggle {
