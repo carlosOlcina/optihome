@@ -10,19 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
+          cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -39,4 +37,4 @@ jobs:
       - name: Tests (headless)
         env:
           CI: true
-        run: pnpm test -- --watch=false
+        run: pnpm test --watch=false
